@@ -14,91 +14,118 @@
       text-decoration: none;
       color: navy;
       font-size: 19px;
+      font-weight: bold;
     }
     
     a:hover{
-      color: crimson;
+      color: darkblue;
     }
     
     header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      background-color: navy;
+      color: gold;
+      text-align: center;
+      padding: 16px;
+      border-radius: 12px;
       margin-bottom: 20px;
     }
     
     main {
       background-color: white;
       padding: 20px;
-      border-radius: 12px;
-      margin: auto;
-      box-shadow: 0 8px 20px gray;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px gray;
     }
     
     main:hover {
     transform: scale(1.01);
     }
     
+    ul {
+      list-style: none;
+      paddinh: 0;
+    }
+    
+    li: hover {
+      background-color: gold;
+      transform: translateX(4px);
+    }
+    
     h1 {
-      text-align: center;
-      color: darkslategray
+      margin: 0;
     }
     
     h2 {
-      font-size: 20px;
+      color: navy;
     }
     
     p {
-      font-size: 20px;
+      font-size: 18px;
     }
     
     footer {
+      background-color: navy;
+      color: gold;
       text-align: center;
-      color: dimgray;
-      margin-top: 30px;
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    
+    .page-frame {
+      background-color: yellow;
+      border: 6px solid navy;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 0 6px gold;
     }
     
     @media (max-width: 600px) {
       body {
         padding: 12px;
-   }
+    }
 
     p {
       font-size: 1.2rem;
-   }
+    }
 
     a {
       font-size: 1.2rem;
-   }
+    }
 
-   h1 {
+    h1 {
       font-size: 2.2rem;
-   }
- }
+    }
+}
   </style>
-<header>
-  <h1>Welcome!</h1>
-</header>
+<body>
+  <div class="page-frame">
+    <header>
+      <h1>Pokémon Build Guide</h1>
+    </header>
 
-<main>
-  <p>This website provides Pokémon build recommendations for Pokémon FireRed and LeafGreen.</p>
-  <h2>Pokemon List:<br></h2>
-  <ul>
-  <li><a href="aerodactyl.html">Aerodactyl - Physical Sweeper</a></li>
-  <li><a href="alakazam.html">Alakazam - Special Sweeper</a></li>
-  <li><a href="arbok.html">Arbok - Disruptor</a></li>
-  <li><a href="articuno.html">Articuno - Bulky Special Attacker</a></li>
-  <li><a href="arcanine.html">Arcanine - Mixed Attacker</a></li>
-  <li><a href="beedrill.html">Beedrill - Physical Attacker</a></li>
-  <li><a href="blastoise.html">Blastoise - Bulky</a></li>
-  <li><a href="butterfree.html">Butterfree - Status Support</a></li>
-  <li><a href="chansey.html">Chansey - Special Wall</a></li>
-  <li><a href="charizard.html">Charizard - Special Sweeper</a></li>
-  </ul>
-</main>
+     <main>
+     <p>This website provides Pokémon build recommendations for Pokémon FireRed and LeafGreen.</p>
+     <h2>Pokemon List:<br></h2>
+     <ul>
+     <li><a href="aerodactyl.html">Aerodactyl - Physical Sweeper</a></li>
+     <li><a href="alakazam.html">Alakazam - Special Sweeper</a></li>
+     <li><a href="arbok.html">Arbok - Disruptor</a></li>
+     <li><a href="articuno.html">Articuno - Bulky Special Attacker</a></li>
+     <li><a href="arcanine.html">Arcanine - Mixed Attacker</a></li>
+     <li><a href="beedrill.html">Beedrill - Physical Attacker</a></li>
+     <li><a href="blastoise.html">Blastoise - Bulky</a></li>
+     <li><a href="butterfree.html">Butterfree - Status Support</a></li>
+     <li><a href="chansey.html">Chansey - Special Wall</a></li>
+     <li><a href="charizard.html">Charizard - Special Sweeper</a></li>
+     </ul>
+     </main>
 
-<footer>Thanks For Using This Pokémon Build Guide!</footer>
-
+     <footer>Thanks For Using This Pokémon Build Guide!</footer>
+   </div>
+</body>
 </head>
 </html>
