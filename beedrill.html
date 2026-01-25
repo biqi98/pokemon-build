@@ -3,32 +3,122 @@
 <head>
   <title>Beedrill</title>
   <style>
-    h1 {
+    body {
+      font-family: Arial;
+      background-color: lightgray;
+      padding:: 20px;
+    }
+    
+    .page-frame {
+      background-color: yellow;
+      border: 6px solid navy;
+      border-radius: 18px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 0 6px gold;
+    }
+    
+    header h1 {
+      margin: 0;
       text-align: center;
+    }
+    
+    header a {
+      display: inline-block;
+      margin-top: 8px;
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    header a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px gray;
+    }
+    
+    h2 {
+      color: navy;
+    }
+    
+    h3 {
+      color: navy;
+      margin: 0;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      background-color: lemonchiffon;
+      border-left: solid navy;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+    }
+    
+    footer {
+      background-color: navy;
+      color: gold;
+      text-align: center;
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 600px) {
+      p {
+        font-size: 1.1rem;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
 <body>
-<header>
+  <div class="page-frame">
+  <header>
     <h1>Beedrill</h1>
     <a href="index.html">← Back to Home</a>
-</header>
+  </header>
 
-<main>
-  <p>Beedrill is a "Poison Bee Pokémon" known for being extremely territorial and nesting in forests. It has three stingers—one on each foreleg and one on its abdomen—and attacks in swift, furious swarms, making it dangerous to approach.</p>
-  <h2>Build Recommendation:</h2>
-  <ul>
-    <li>Name: Beedrill</li>
-    <li>Type: Bug, Poison</li>
-    <li>Ability: Swaem</li>
-    <li>Nature: Adamant</li>
-    <li>Held item: Silver Powder</li>
-    <li>Moveset: Twineedle, Brick Break, Swords Dance, Aerial Ace</li>
-  </ul>
-</main>
+  <main>
+    <p>Beedrill is a "Poison Bee Pokémon" known for being extremely territorial and nesting in forests. It has three stingers—one on each foreleg and one on its abdomen—and attacks in swift, furious swarms, making it dangerous to approach.</p>
+    <h2>Build Recommendation:</h2>
+    <ul>
+      <li>Name: Beedrill</li>
+      <li>Type: Bug, Poison</li>
+      <li>Ability: Swarm</li>
+      <li>Nature: Adamant</li>
+      <li>Held item: Silver Powder</li>
+      <li>Moveset: Twineedle, Brick Break, Swords Dance, Aerial Ace</li>
+    </ul>
+    <h3>How to Use:</h3>
+    <p>
+      Use Beedrill as an early-game attacker that relies on its Speed to strike first. It's most effective in the early stages of the game where enemy Pokémon are weaker. Beedrill struggles in the late game, so use it to gain momentum early and consider replacing it later as stronger options become available.
+    </p>
+  </main>
 
-<footer>
-  <p>Pokemon Build Guide © 2026</p>
-</footer>
+  <footer>
+    <p>Pokemon Build Guide © 2026</p>
+  </footer>
+  </div>
 </body>
 </html>
