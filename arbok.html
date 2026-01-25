@@ -4,50 +4,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arbok Build Guide | FireRed</title>
   <style>
-    h1 {
+    body {
+      font-family: Arial;
+      background-color: lightgray;
+      padding:: 20px;
+    }
+    
+    .page-frame {
+      background-color: yellow;
+      border: 6px solid navy;
+      border-radius: 18px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 0 6px gold;
+    }
+    
+    header h1 {
+      margin: 0;
       text-align: center;
     }
     
-    @media (max-width: 600px) {
-      body {
-        padding: 12px;
+    header a {
+      display: inline-block;
+      margin-top: 8px;
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
     }
-
+    
+    header a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px gray;
+    }
+    
+    h2 {
+      color: navy;
+    }
+    
+    h3 {
+      color: navy;
+      margin: 0;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    
     p {
-      font-size: 1.2rem;
+      font-size: 18px;
     }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      background-color: lemonchiffon;
+      border-left: solid navy;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+    }
+    
+    footer {
+      background-color: navy;
+      color: gold;
+      text-align: center;
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 600px) {
+      p {
+        font-size: 1.1rem;
+      }
 
-    a {
-      font-size: 1.2rem;
+      header h1 {
+        font-size: 2.2rem;
+      }
     }
-
-    h1 {
-      font-size: 2.2rem;
-    }
-   }
   </style>
 </head>
 <body>
-<header>
-    <h1>Arbok</h1>
-    <a href="index.html">← Back to Home</a>
-</header>
+  <div class="page-frame">
+    <header>
+      <h1>Arbok</h1>
+      <a href="index.html">← Back to Home</a>
+    </header>
 
-<main>
-  <p>Arbok is a Poison-type serpentine Pokémon. It is known as the "Cobra Pokémon" and is characterized by its large hood, which features a menacing, face-like pattern. </p>
-  <h2>Build Recommendation:</h2>
-  <ul>
-    <li>Name: Arbok</li>
-    <li>Type: Poison</li>
-    <li>Ability: Intimidate</li>
-    <li>Nature: Adamant</li>
-    <li>Held item: Leftovers</li>
-    <li>Moveset: Sludge Bomb, Earthquake, Glare, Rock Slide</li>
-  </ul>
-</main>
+  <main>
+    <p>Arbok is a Poison-type serpentine Pokémon. It is known as the "Cobra Pokémon" and is characterized by its large hood, which features a menacing, face-like pattern. </p>
+    <h2>Build Recommendation:</h2>
+    <ul>
+      <li>Name: Arbok</li>
+      <li>Type: Poison</li>
+      <li>Ability: Intimidate</li>
+      <li>Nature: Adamant</li>
+      <li>Held item: Leftovers</li>
+      <li>Moveset: Sludge Bomb, Earthquake, Glare, Rock Slide</li>
+    </ul>
+    <h3>How to Use:</h3>
+    <p>
+      Use Arbok as a utility Pokémon rather than a main sweeper. Intimidate helps weaken physical attackers on switch-in, allowing Arbok to disrupt opponents with moves like Glare. It works best in the mid game to spread status and support the team rather than trying to sweep on its own.
+    </p>
+  </main>
 
-<footer>
-  <p>Pokemon Build Guide © 2026</p>
-</footer>
+  <footer>
+    <p>Pokemon Build Guide © 2026</p>
+  </footer>
+  </div>
 </body>
 </html>
