@@ -99,8 +99,46 @@
     h1 {
       font-size: 2.2rem;
     }
-}
+  }
+
+    .search-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .search-container input {
+      width: 60%;
+      max-width: 400px;
+      padding: 10px 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 2px soild navy;
+      outline: none;
+    }
+
+    .search-container input:focus {
+      border-color: gold;
+    }
   </style>
+  <script>
+  function searchPokemon() {
+    const input = document.getElementById("searchInput");
+    const filter = input.value.toLowerCase();
+    const ul = document.querySelector("ul");
+    const li = ul.getElementsByTagName("li");
+    
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].getElementsByTagName("a")[0];
+      const textValue = a.textContent || a.innerText;
+      
+      if (textValue.toLowerCase().includes(filter)) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 <body>
   <div class="page-frame">
     <header>
@@ -109,6 +147,9 @@
 
      <main>
      <p>This website provides Pokémon build recommendations for Pokémon FireRed and LeafGreen.</p>
+     <div class="search-container">
+       <input type="text" id="searchInput" placeholder="Search Pokemon" onkeyup="searchPokemon()">
+     </div>
      <h2>Pokemon List:<br></h2>
      <ul>
      <li><a href="aerodactyl.html">Aerodactyl - Physical Sweeper</a></li>
@@ -141,6 +182,9 @@
      <li><a href="hitmonchan.html">Hitmonchan - Physical Attacker</a></li>
      <li><a href="hitmonlee.html">Hitmonlee - Physical Sweeper</a></li>
      <li><a href="hypno.html">Hypno - Special Wall</a></li>
+     
+     
+     
      </ul>
      </main>
 
