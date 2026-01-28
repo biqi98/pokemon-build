@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kanto Pokémon Build Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightgray;
+      padding: 20px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: navy;
+      font-size: 19px;
+      font-weight: bold;
+    }
+    
+    a:hover{
+      color: darkblue;
+    }
+    
+    header {
+      background-color: navy;
+      color: gold;
+      text-align: center;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px gray;
+    }
+    
+    main:hover {
+    transform: scale(1.01);
+    }
+    
+    ul {
+      list-style: none;
+      paddinh: 0;
+    }
+    
+    li: hover {
+      background-color: gold;
+      transform: translateX(4px);
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    h2 {
+      color: navy;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    footer {
+      background-color: navy;
+      color: gold;
+      text-align: center;
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    
+    .page-frame {
+      background-color: yellow;
+      border: 6px solid navy;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 0 6px gold;
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+    .search-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .search-container input {
+      width: 60%;
+      max-width: 400px;
+      padding: 10px 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 2px soild navy;
+      outline: none;
+    }
+
+    .search-container input:focus {
+      border-color: gold;
+    }
+  </style>
+  <script>
+  function searchPokemon() {
+    const input = document.getElementById("searchInput");
+    const filter = input.value.toLowerCase();
+    const ul = document.querySelector("ul");
+    const li = ul.getElementsByTagName("li");
+    
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].getElementsByTagName("a")[0];
+      const textValue = a.textContent || a.innerText;
+      
+      if (textValue.toLowerCase().includes(filter)) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+<body>
+  <div class="page-frame">
+    <header>
+      <h1>Kanto Pokémon Build Guide</h1>
+    </header>
+
+     <main>
+     <p>This page provides Pokémon build recommendations for Kanto Pokémon.</p>
+     <div class="search-container">
+       <input type="text" id="searchInput" placeholder="Search Pokemon" onkeyup="searchPokemon()">
+     </div>
+     <h2>Pokemon List:<br></h2>
+     <ul>
+     <li><a href="aerodactyl.html">Aerodactyl - Physical Sweeper</a></li>
+     <li><a href="alakazam.html">Alakazam - Special Sweeper</a></li>
+     <li><a href="arbok.html">Arbok - Disruptor</a></li>
+     <li><a href="articuno.html">Articuno - Bulky Special Attacker</a></li>
+     <li><a href="arcanine.html">Arcanine - Mixed Sweeper</a></li>
+     <li><a href="beedrill.html">Beedrill - Physical Attacker</a></li>
+     <li><a href="blastoise.html">Blastoise - Bulky</a></li>
+     <li><a href="butterfree.html">Butterfree - Status Support</a></li>
+     <li><a href="chansey.html">Chansey - Special Wall</a></li>
+     <li><a href="charizard.html">Charizard - Special Sweeper</a></li>
+     <li><a href="clefable.html">Clefable - Utility Tank</a></li>
+     <li><a href="cloyster.html">Cloyster - Physical Wall</a></li>
+     <li><a href="dewgong.html">Dewgong - Bulky</a></li>
+     <li><a href="ditto.html">Ditto - Anti-Setup</a></li>
+     <li><a href="dodrio.html">Dodrio - Physical Sweeper</a></li>
+     <li><a href="dragonite.html">Dragonite - Mixed Sweeper</a></li>
+     <li><a href="dugtrio.html">Dugtrio - Fast Cleaner</a></li>
+     <li><a href="electabuzz.html">Electabuzz - Special Sweeper</a></li>
+     <li><a href="electrode.html">Electrode - Support</a></li>
+     <li><a href="exeggutor.html">Exeggutor - Special Attacker</a></li>
+     <li><a href="farfetch'd.html">Farfetch'd - Utility Physical</a></li>
+     <li><a href="fearow.html">Fearow - Physical Sweeper</a></li>
+     <li><a href="flareon.html">Flareon - Mixed Attacker</a></li>
+     <li><a href="gengar.html">Gengar - Special Sweeper</a></li>
+     <li><a href="golbat.html">Golbat - Utility</a></li>
+     <li><a href="golduck.html">Golduck - Special Attacker</a></li>
+     <li><a href="golem.html">Golem - Physical Tank</a></li>
+     <li><a href="gyarados.html">Gyarados - Physical Sweeper</a></li>
+     <li><a href="hitmonchan.html">Hitmonchan - Physical Attacker</a></li>
+     <li><a href="hitmonlee.html">Hitmonlee - Physical Sweeper</a></li>
+     <li><a href="hypno.html">Hypno - Special Wall</a></li>
+     <li><a href="jolteon.html">Jolteon - Special Sweeper</a></li>
+     <li><a href="jynx.html">Jynx - Special Sweeper</a></li>
+     <li><a href="kabutops.html">Kabutops - Physical Sweeper</a></li>
+     <li><a href="kangaskhan.html">Kangaskhan - Bulky Physical Attacker</a></li>
+     <li><a href="kingler.html">Kingler - Physical Breaker</a></li>
+     <li><a href="lapras.html">Lapras - Bulky Special Attacker</a></li>
+     <li><a href="lickitung.html">Lickitung - Utility Tank</a></li>
+     <li><a href="machamp.html">Machamp - Wallbreaker</a></li>
+     <li><a href="magmar.html">Magmar - Special Sweeper</a></li>
+     <li><a href="magneton.html">Magneton - Special Attacker</a></li>
+     <li><a href="marowak.html">Marowak - Wallbreaker</a></li>
+     <li><a href="mew.html">Mew - Utility Core</a></li>
+     <li><a href="mewtwo.html">Mewtwo - Special Sweeper</a></li>
+     </ul>
+     </main>
+
+     <footer>Thanks For Using This Pokémon Build Guide!</footer>
+   </div>
+</body>
+</head>
+</html>
